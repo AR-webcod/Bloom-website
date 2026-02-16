@@ -2,140 +2,144 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bloom Website</title>
-  <link rel="shortcut icon" href="./images/Screenshot 2025-12-27 212815.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom - Bootstrap Version</title>
 
-  <link rel="stylesheet" href="style.css">
+                         <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <div class="header">
-    <h2>Bloom</h2>
-    <ul>
-      <li>Home</li>
-      <li>About Us</li>
-      <li>Services</li>
-      <li>Portfolio</li>
-      <li>Contact Us</li>
-    </ul>
-  </div>
+                           <!-- NAVBAR  -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bloom</a>
 
-  <!-- HERO SECTION -->
-  <div class="hero">
-    <div class="hero-text">
-      <h2>Lorem ipsum dolor sit amet</h2>
-      <p>
-        Vestibulum placerat tincidunt. Nulla porta tortor
-        vitae ultrices magna feugiatl. Lorem, ipsum dolor.
-      </p>
-      <button>Learn More</button>
-    </div>
+                                  <!-- Mobile Toggle -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="hero-img">
-      <img src="./images/SECTION.png" alt="Hero Image">
-    </div>
-  </div>
-
-  <!-- CARDS -->
-  <div class="cards">
-    <h2>This is a Heading</h2>
-
-    <div class="card-box">
-      <div class="card">
-        <div class="card-img"></div>
-        <h4>Aliquam et iaculis sapien</h4>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <button>Learn More</button>
-      </div>
-
-      <div class="card">
-        <div class="card-img"></div>
-        <h4>Aliquam et iaculis sapien</h4>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <button>Learn More</button>
-      </div>
-
-      <div class="card">
-        <div class="card-img"></div>
-        <h4>Aliquam et iaculis sapien</h4>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
-        <button>Learn More</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <div class="footer">
-
-    <!-- LATEST POSTS -->
-    <div class="latest-posts">
-      <h3>Latest Posts</h3>
-
-      <div class="post">
-        <img src="./images/date.jpg">
-        <div>
-          <strong>Aliquam et iaculis sapien</strong>
-          <p>Vestibulum placerat Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
 
-      <div class="post">
-        <img src="./images/date.jpg">
-        <div>
-          <strong>Aliquam et iaculis sapien</strong>
-          <p>Vestibulum placerat Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
+                                        <!--  HERO  -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>Vestibulum placerat tincidunt. Nulla porta tortor vitae ultrices magna feugiat.</p>
+                    <button class="btn btn-primary">Learn More</button>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <img src="./images/SECTION.png" class="img-fluid" alt="Hero Image">
+                </div>
+
+            </div>
         </div>
-      </div>
+    </section>
 
-      <div class="post">
-        <img src="./images/date.jpg">
-        <div>
-          <strong>Aliquam et iaculis sapien</strong>
-          <p>Vestibulum placerat Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          </p>
+                                    <!--card-->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">This is a Heading</h2>
+
+            <div class="row">
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Aliquam et iaculis sapien</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Aliquam et iaculis sapien</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Aliquam et iaculis sapien</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-      </div>
-    </div>
+    </section>
 
-    <!-- ABOUT -->
-    <div>
-      <h3>About</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-        Vestibulum placerat tincidunt.</p>
-      <p> vitae ultrices magna feugiat.
-        Lorem ipsum dolor sit amet <br> consectetur adipi</p>
+    <!-- ================= FOOTER ================= -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
 
-    </div>
+                <!-- Latest Posts -->
+                <div class="col-md-4">
+                    <h5>Latest Posts</h5>
+                    <div class="post-item">
+                        <img src="./images/date.jpg" alt="date icon">
+                        <p>Aliquam et iaculis sapien</p>
+                    </div>
+                    <div class="post-item">
+                        <img src="./images/date.jpg" alt="date icon">
+                        <p>Aliquam et iaculis sapien</p>
+                    </div>
+                    <div class="post-item">
+                        <img src="./images/date.jpg" alt="date icon">
+                        <p>Aliquam et iaculis sapien</p>
+                    </div>
+                </div>
 
-    <!-- SOCIAL -->
-    <div class="social">
-      <h3>Stay Connected</h3>
-      <ul>
-        <li>
-          <img src="./images/icons8-facebook-48.png" alt="Facebook">
-          <a href="https://www.facebook.com/abdulrehaman.khan.712/" target="blank">Facebook</a>
-        </li>
-        <li>
-          <img class="Twitter" src="./images/icons8-twitterx-48.png" alt="Twitter">
-          <a href="https://x.com/" target="_blank">Twitter </a>
-        </li>
-        <li>
-          <img src="./images/icons8-instagram-50.png" alt="Instagram">
-          <a href="https://www.instagram.com/arsroyal1997/" target="_blank">Instagram</a>
-        </li>
-      </ul>
-    </div>
-  </div>
+                <!-- About -->
+                <div class="col-md-4">
+                    <h5>About</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
 
-  </div>
-  </div>
+                <!-- Social -->
+                <div class="col-md-4">
+                    <h5>Stay Connected</h5>
+                    <div class="social-icons">
+                        <a href="#" title="Facebook"><img src="./images/icons8-facebook-48.png" alt="Facebook"></a>
+                        <a href="#" title="Twitter"><img src="./images/icons8-twitterx-48.png" alt="Twitter"></a>
+                        <a href="#" title="Instagram"><img src="./images/icons8-instagram-50.png" alt="Instagram"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+                                   <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
-</html
+</html>
